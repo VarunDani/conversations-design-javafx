@@ -14,20 +14,32 @@ For Windoes -> Browse to Folder /ExecutableJAR and run command (Latest JDK Requi
 
 **Screen layout :**
 
+
 1. Main Chat Window Screen
-![](/SupportedFiles/mainScreen.JPG?raw=true)
+
+![](/SupportedFiles/mainScreen.jpg?raw=true)
+
 
 2. User Selection Screen (User can be selected from left chat pannel)
-![](/SupportedFiles/UserSelection.JPG?raw=true)
+
+![](/SupportedFiles/UserSelection.jpg?raw=true)
+
 
 3. Channel or Group Selection right menu (on clicking right menu)
-![](/SupportedFiles/channelSelection.JPG?raw=true)
+
+![](/SupportedFiles/channelSelection.jpg?raw=true)
+
 
 4. Options pop-up menu
-![](/SupportedFiles/optionMenu.JPG?raw=true)
+
+![](/SupportedFiles/optionMenu.jpg?raw=true)
+
 
 5. Materialized Message Box Layout at bottom of Chat Window
-![](/SupportedFiles/msgBox.JPG?raw=true)
+
+![](/SupportedFiles/msgBox.jpg?raw=true)
+
 
 6. Can initiate New Message after Entering Text and pressing Enter Key.
-![](/SupportedFiles/newMsg.JPG?raw=true)
+
+![](/SupportedFiles/newMsg.jpg?raw=true)
