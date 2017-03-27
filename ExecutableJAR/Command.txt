@@ -1,0 +1,1 @@
+java -cp conversations-design-javafx.jar;lib/*;. im.conversations.app.launch.MainDemo

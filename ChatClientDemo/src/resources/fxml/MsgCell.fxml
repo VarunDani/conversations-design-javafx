@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane fx:id="mainPanel2" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <ImageView fx:id="imgView2" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" styleClass="round-image-view-circle">
+      </ImageView>
+   </left>
+   <center>
+      <VBox  BorderPane.alignment="CENTER">
+         <children>
+            <HBox HBox.hgrow="ALWAYS">
+               
+               <children>
+                  <!-- <HBox >
+                     <children>
+                        <Label text="" HBox.hgrow="ALWAYS" fx:id="userName2">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow color="#1e1d1d" />
+                           </effect>
+                            <HBox.margin>
+                              <Insets left="10.0" top="15.0" bottom="7.0"/>
+                           </HBox.margin>
+                        </Label>
+                     </children> -->
+                     
+                    <!--  <Circle layoutX="300.0" layoutY="180.0" radius="8.0" stroke="#67d74c" strokeType="INSIDE" fx:id="available2">
+					         <HBox.margin>
+                              <Insets left="5.0" top="18.0" bottom="7.0"/>
+                           </HBox.margin>
+					  </Circle> -->
+					      
+                  <!-- </HBox>
+                  <HBox alignment="TOP_RIGHT" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="timeLabel2" text="12 : 30" textFill="#615d5d" />
+                     </children>
+                  </HBox> -->
+                  
+                   <AnchorPane HBox.hgrow="ALWAYS">
+                     <children>
+                         <Label text="" HBox.hgrow="ALWAYS" fx:id="userName2" AnchorPane.leftAnchor="0.0" >
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow color="#1e1d1d" />
+                           </effect>
+                        </Label>
+                         <Label fx:id="timeLabel2" text="12 : 30" textFill="#615d5d"  AnchorPane.rightAnchor="1.0" />
+                     </children>
+                      <HBox.margin>
+                              <Insets left="10.0" top="15.0" bottom="7.0"/>
+                           </HBox.margin>
+                  </AnchorPane>
+                  
+                  
+               </children>
+            </HBox>
+            <HBox>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </VBox.margin>
+               <children>
+                  <Label  wrapText="true" textFill="#000" fx:id="statusMsg2">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

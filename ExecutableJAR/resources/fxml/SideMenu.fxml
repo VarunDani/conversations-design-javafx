@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.StackPane?>
+<?import java.lang.String?>
+<StackPane fx:id="root" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+	<JFXListView fx:id="list1" styleClass="custom-jfx-list-view"
+			layoutX="0" layoutY="50">
+			<Label> Channel #1</Label>
+			<JFXListView fx:id="subList" styleClass="sublist">
+				<groupnode>
+					<Label styleClass="sub-label"> Channel #2 </Label>
+				</groupnode>
+				<Label> Group #2.1 </Label>
+				<Label> Group #2.2 </Label>
+			</JFXListView>
+			<Label>Channel #3</Label>
+			<Label>Channel #4</Label>
+			<Label>Channel #5</Label>
+			<JFXListView fx:id="subList1" styleClass="sublist">
+				<groupnode>
+					<Label styleClass="sub-label"> Channel #6 </Label>
+				</groupnode>
+				<Label> Group #6.1 </Label>
+				<Label> Group #6.2 </Label>
+			</JFXListView>
+			<Label>Channel #7</Label>
+			<Label>Channel #8</Label>
+			<Label>Channel #9</Label>
+		</JFXListView>
+</StackPane>

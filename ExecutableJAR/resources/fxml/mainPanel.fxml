@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.fontawesome.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import com.jfoenix.validation.RequiredFieldValidator?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<StackPane fx:id="root" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+           <BorderPane>
+		
+		<left>
+			<StackPane fx:id="root2" xmlns="http://javafx.com/javafx/2.2" xmlns:fx="http://javafx.com/fxml/1">
+				<JFXListView fx:id="sideList2" expanded="true" layoutX="300" layoutY="50" styleClass="custom-jfx-list-view1">
+				</JFXListView>
+			</StackPane>
+		</left>
+		
+		
+		<center>
+		
+		<BorderPane>
+			  
+			  <center>
+			      
+				<JFXListView fx:id="sideList3" expanded="true" layoutX="300" layoutY="50" styleClass="custom-jfx-list-view2">
+				<Label>qeqe</Label>
+				<Label>qeqe</Label>
+				<Label>qeqe</Label>
+			
+				
+				</JFXListView>
+			  </center>
+			  
+			   <bottom>
+				     <AnchorPane >
+		                  <JFXTextField promptText="Enter Message Here" fx:id="msgBox" labelFloat="true" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0">
+					         <BorderPane.margin>
+					            <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+					         </BorderPane.margin>
+					      </JFXTextField>
+	      			</AnchorPane>
+			   </bottom>
+			</BorderPane>
+			
+	
+		</center>
+		
+		
+		</BorderPane> 
+	
+</StackPane>
