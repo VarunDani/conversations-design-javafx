@@ -1,5 +1,8 @@
 package im.conversations.app.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.annotation.PostConstruct;
 
 import com.jfoenix.controls.JFXListView;
@@ -14,6 +17,15 @@ import io.datafx.controller.util.VetoException;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Label;
+import javafx.scene.effect.DropShadow;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.CycleMethod;
+import javafx.scene.paint.LinearGradient;
+import javafx.scene.paint.Stop;
+import javafx.scene.shape.Circle;
 
 @FXMLController(value = "/resources/fxml/SideMenu.fxml", title = "Conversations.im")
 public class SideMenuController {
@@ -21,31 +33,41 @@ public class SideMenuController {
 	@FXMLViewFlowContext
 	private ViewFlowContext context;
 
+	@FXML Circle hello;
 	
 	@FXML
 	private JFXListView<Label> sideList;
 
+	
+	@FXML
+	private ImageView imgViewLst;
+	
+	@FXML
+	private Circle availableLst;
+	
+	
 	@PostConstruct
 	public void init() throws FlowException, VetoException {
-		/*FlowHandler contentFlowHandler = (FlowHandler) context.getRegisteredObject("ContentFlowHandler");
-		sideList.propagateMouseEventsToParent();
-		sideList.getSelectionModel().selectedItemProperty().addListener((o,oldVal,newVal)->{
-			if(newVal!=null){
-				try {
-					contentFlowHandler.handle(newVal.getId());
-				} catch (Exception e) {
-					e.printStackTrace();
-				}			
-			}
-		});
-		Flow contentFlow = (Flow) context.getRegisteredObject("ContentFlow");
-		bindNodeToController(button, ButtonController.class, contentFlow, contentFlowHandler);
-		bindNodeToController(checkbox, CheckboxController.class, contentFlow, contentFlowHandler);*/
 		
-	}
-
-	private void bindNodeToController(Node node, Class<?> controllerClass, Flow flow, FlowHandler flowHandler) {
-		flow.withGlobalLink(node.getId(), controllerClass);
+		//Side Panel Effects 
+		
+		Image image = new Image("/resources/img/user2.png");
+	      Circle clip = new Circle(100,100,100);
+	      
+	      imgViewLst.setImage(image);
+	      imgViewLst.setFitWidth(200);
+	      imgViewLst.setFitHeight(200);
+	      imgViewLst.setPreserveRatio(true);
+	      imgViewLst.setSmooth(true);
+	      imgViewLst.setClip(clip);
+	      
+	      availableLst.setStroke(Color.web("#67d74c"));;
+		  List<Stop> stops = new ArrayList<Stop>();
+		  stops.add(new Stop(0.0, Color.web("#408042")));
+		  stops.add(new Stop(1.0, Color.web("#27da2a")));
+		  LinearGradient lGrad = new LinearGradient(0.6893203883495146, 0.0048543689320388345, 0.7718446601941747, 0.8203883495145631, true, CycleMethod.NO_CYCLE, stops);
+		  availableLst.setFill(lGrad);
+		
 	}
 
 }
