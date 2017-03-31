@@ -131,6 +131,18 @@
 	-fx-cursor: hand;
 }
 
+.icon-custom-star{
+	-fx-text-fill: #fdd835;
+	-fx-padding: 10.0;
+	-fx-cursor: hand;
+}
+.icon-custom-msg{
+	-fx-text-fill: #9e9e9e;
+	-fx-padding: 10.0;
+	-fx-cursor: hand;
+}
+
+
 .icons-rippler{
 	-jfx-rippler-fill: #FE774D;
 	-jfx-mask-type: CIRCLE;
@@ -155,16 +167,16 @@
 }
 
 .icons-badge .badge-pane {
-	-fx-background-color:#ff4081;
-	-fx-background-radius: 23;	
-	-fx-pref-width: 23;
-	-fx-pref-height: 23;	
+	-fx-background-color:#5FBA7D;
+	-fx-background-radius: 15;	
+	-fx-pref-width: 15;
+	-fx-pref-height: 15;	
 	-fx-alignment: center;
 }
 
 .icons-badge Label{
 	-fx-font-weight: BOLD;
-	-fx-font-size: 14.0px;
+	-fx-font-size: 10.0px;
 	-fx-text-fill: WHITE;
 }
 
@@ -521,7 +533,7 @@
 } 	
 
 .custom-jfx-list-view2{
-	-jfx-vertical-gap : 30.0;
+	-jfx-vertical-gap : 10.0;
   	-fx-pref-width: 300px;
   	-fx-background-color: transparent ;
   	-jfx-cell-horizontal-margin: 0.0;

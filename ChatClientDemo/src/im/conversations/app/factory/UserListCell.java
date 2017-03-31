@@ -6,6 +6,7 @@ import java.util.List;
 
 import com.jfoenix.controls.JFXListCell;
 
+import de.jensd.fx.fontawesome.Icon;
 import im.conversations.app.beans.User;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -13,6 +14,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.CycleMethod;
 import javafx.scene.paint.LinearGradient;
@@ -44,6 +46,8 @@ public class UserListCell extends JFXListCell<User>{
 	@FXML
 	private Circle available;
 	
+	@FXML private StackPane unreadMsgPane;
+	@FXML private Icon starIcon;
 	
 	private FXMLLoader mLoader;
 	
@@ -109,14 +113,17 @@ public class UserListCell extends JFXListCell<User>{
 	    	  else
 	    		  available.setVisible(false);
 	    
+	    	  if(usr.isFavourite())starIcon.setVisible(true);
+	    	  if(usr.isUnreadMsgs())unreadMsgPane.setVisible(true);
+	    	  
 	      //setText(msg.getMessage() +" : "+ msg.getRecepient().toString()); 
 	      //setText(usr.getUserName()); 
 	      
 	      Image image = new Image(usr.getImagePath()!=null ? usr.getImagePath() : "/resources/img/user2.png");
-	      final Circle clip = new Circle(35,35,35);
+	      final Circle clip = new Circle(30,30,30);
 	      imgView.setImage(image);
-	      imgView.setFitWidth(80);
-	      imgView.setFitHeight(70);
+	      imgView.setFitWidth(60);
+	      imgView.setFitHeight(60);
 	      imgView.setPreserveRatio(true);
 	      imgView.setSmooth(true);
 	      imgView.setClip(clip);
