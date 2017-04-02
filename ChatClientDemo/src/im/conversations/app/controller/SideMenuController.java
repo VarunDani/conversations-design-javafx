@@ -51,7 +51,7 @@ public class SideMenuController {
 		
 		//Side Panel Effects 
 		
-		Image image = new Image("/resources/img/user2.png");
+		Image image = new Image("/resources/img/user22.jpg");
 	      Circle clip = new Circle(100,100,100);
 	      
 	      imgViewLst.setImage(image);

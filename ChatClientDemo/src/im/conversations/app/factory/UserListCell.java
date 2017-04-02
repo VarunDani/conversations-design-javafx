@@ -92,18 +92,18 @@ public class UserListCell extends JFXListCell<User>{
 	    		  
 	    	  }
 	    	  else if(usr.getAvailStatus().equals("away")){
-	    		  available.setStroke(Color.web("#dfe1b6"));;
+	    		  available.setStroke(Color.web("#DEE47B"));;
 	    		  List<Stop> stops = new ArrayList<Stop>();
-	    		  stops.add(new Stop(0.0, Color.web("#dfe1b6")));
-	    		  stops.add(new Stop(1.0, Color.web("#dada5e")));
+	    		  stops.add(new Stop(0.0, Color.web("#DBE16B")));
+	    		  stops.add(new Stop(1.0, Color.web("#D4D427")));
 	    		  lGrad = new LinearGradient(0.6893203883495146, 0.0048543689320388345, 0.7718446601941747, 0.8203883495145631, true, CycleMethod.NO_CYCLE, stops);
 	    		  
 	    	  }
 	    	  else if(usr.getAvailStatus().equals("busy")){
-	    		  available.setStroke(Color.web("#ee9c8f"));;
+	    		  available.setStroke(Color.web("#F25A42"));;
 	    		  List<Stop> stops = new ArrayList<Stop>();
-	    		  stops.add(new Stop(0.007246376811594203, Color.web("#e1c8c8")));
-	    		  stops.add(new Stop(1.0, Color.web("#d03e1d")));
+	    		  stops.add(new Stop(0.007246376811594203, Color.web("#ED9D9D")));
+	    		  stops.add(new Stop(1.0, Color.web("#D3330F")));
 	    		  lGrad = new LinearGradient(0.6893203883495146, 0.0048543689320388345, 0.7718446601941747, 0.8203883495145631, true, CycleMethod.NO_CYCLE, stops);
 	    		  
 	    	  }

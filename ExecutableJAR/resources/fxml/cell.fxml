@@ -11,11 +11,24 @@
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Circle?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import de.jensd.fx.fontawesome.Icon?>
+<?import com.jfoenix.controls.*?>
 
-<BorderPane fx:id="mainPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"  prefHeight="70.0" prefWidth="255.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+
+<BorderPane fx:id="mainPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"  prefHeight="60.0" prefWidth="255.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
    <left>
-      <ImageView fx:id="imgView" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" styleClass="round-image-view-circle">
+   
+    <AnchorPane prefHeight="30.0" prefWidth="30.0">
+   
+      <ImageView fx:id="imgView" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" styleClass="round-image-view-circle">
       </ImageView>
+      
+        <Circle layoutX="300.0" layoutY="180.0" radius="8.0" stroke="#67d74c" strokeType="INSIDE" fx:id="available" AnchorPane.bottomAnchor="0.0"  AnchorPane.rightAnchor="0.0">
+		</Circle>
+	</AnchorPane>			  
+					  
    </left>
    <center>
       <VBox  BorderPane.alignment="CENTER">
@@ -23,7 +36,7 @@
             <HBox >
                
                <children>
-                  <HBox >
+                  <HBox HBox.hgrow="ALWAYS">
                      <children>
                         <Label text="" HBox.hgrow="ALWAYS" fx:id="userName">
                            <font>
@@ -36,32 +49,58 @@
                               <Insets left="10.0" top="15.0" bottom="7.0"/>
                            </HBox.margin>
                         </Label>
+                        <Icon awesomeIcon="STAR" size="1em" style=";" styleClass="icon-custom-star" visible="false" fx:id="starIcon">
+                         <HBox.margin>
+                              <Insets left="5.0" top="8.0" />
+                           </HBox.margin>
+                        </Icon>
+                        
                      </children>
                      
-                     <Circle layoutX="300.0" layoutY="180.0" radius="8.0" stroke="#67d74c" strokeType="INSIDE" fx:id="available">
-					         <HBox.margin>
-                              <Insets left="5.0" top="18.0" bottom="7.0"/>
-                           </HBox.margin>
-					  </Circle>
-					      
                   </HBox>
-                  <HBox alignment="TOP_RIGHT" HBox.hgrow="ALWAYS">
+                  <HBox >
                      <children>
-                        <Label fx:id="timeLabel" text="12 : 30" textFill="#615d5d" />
+                        <Label fx:id="timeLabel" text="12 : 30" textFill="#615d5d" >
+                        <font>
+                        <Font size="13.0" />
+                     	</font>
+                     	
+                     	<HBox.margin>
+                              <Insets left="10.0" top="15.0" bottom="7.0"/>
+                           </HBox.margin>
+                     </Label>
                      </children>
                   </HBox>
                </children>
             </HBox>
-            <HBox >
+            <HBox HBox.hgrow="ALWAYS">
                <VBox.margin>
-                  <Insets bottom="10.0" left="10.0" right="10.0" />
+                  <Insets  left="10.0"  />
                </VBox.margin>
                <children>
-                  <Label  text="This is first Messsage for Me " textFill="#8d8888" fx:id="statusMsg">
+               
+               <AnchorPane  HBox.hgrow="ALWAYS">
+               <children>
+               	 <Label  text="This is first Messsage for Me " textFill="#8d8888" fx:id="statusMsg" AnchorPane.leftAnchor="0.0">
                      <font>
                         <Font size="13.0" />
                      </font>
                   </Label>
+                  
+                  <!-- Message Notification -->     
+                 <StackPane AnchorPane.rightAnchor="0.0" fx:id="unreadMsgPane" visible="false">
+                 <children>
+                 	<JFXBadge fx:id="badge1" position="TOP_RIGHT"  styleClass="icons-badge" text="1">
+						<Icon awesomeIcon="ENVELOPE" size="1em" style=";" styleClass="icon-custom-msg" />
+					</JFXBadge>
+                 </children>
+                 </StackPane>
+                 
+                 
+                 
+               </children>
+               </AnchorPane>
+                 
                </children>
             </HBox>
          </children>

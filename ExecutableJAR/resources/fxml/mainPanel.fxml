@@ -11,6 +11,8 @@
 <?import com.jfoenix.controls.*?>
 <?import com.jfoenix.validation.RequiredFieldValidator?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import com.jfoenix.transitions.hamburger.HamburgerSlideCloseTransition?>
+<?import javafx.scene.image.Image?>
 
 
 <StackPane fx:id="root" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
@@ -41,9 +43,14 @@
 			  
 			   <bottom>
 				     <AnchorPane >
-		                  <JFXTextField promptText="Enter Message Here" fx:id="msgBox" labelFloat="true" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0">
+				     
+				      <ImageView fx:id="imgView11" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" styleClass="round-image-view-circle" AnchorPane.leftAnchor="5.0"  AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0"  AnchorPane.rightAnchor="10.0" >
+				     
+     				 </ImageView>
+     				 
+		                  <JFXTextField promptText="Enter Message Here" fx:id="msgBox" labelFloat="true" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0">
 					         <BorderPane.margin>
-					            <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+					            <Insets bottom="20.0" left="20.0" right="10.0" top="20.0" />
 					         </BorderPane.margin>
 					      </JFXTextField>
 	      			</AnchorPane>

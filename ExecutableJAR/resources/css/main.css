@@ -131,6 +131,18 @@
 	-fx-cursor: hand;
 }
 
+.icon-custom-star{
+	-fx-text-fill: #fdd835;
+	-fx-padding: 10.0;
+	-fx-cursor: hand;
+}
+.icon-custom-msg{
+	-fx-text-fill: #9e9e9e;
+	-fx-padding: 10.0;
+	-fx-cursor: hand;
+}
+
+
 .icons-rippler{
 	-jfx-rippler-fill: #FE774D;
 	-jfx-mask-type: CIRCLE;
@@ -155,16 +167,16 @@
 }
 
 .icons-badge .badge-pane {
-	-fx-background-color:#ff4081;
-	-fx-background-radius: 23;	
-	-fx-pref-width: 23;
-	-fx-pref-height: 23;	
+	-fx-background-color:#5FBA7D;
+	-fx-background-radius: 15;	
+	-fx-pref-width: 15;
+	-fx-pref-height: 15;	
 	-fx-alignment: center;
 }
 
 .icons-badge Label{
 	-fx-font-weight: BOLD;
-	-fx-font-size: 14.0px;
+	-fx-font-size: 10.0px;
 	-fx-text-fill: WHITE;
 }
 
@@ -355,6 +367,7 @@
 .custom-jfx-button-raised  {
 	-fx-padding: 0.7em 0.57em;
 	-fx-font-size: 14.0px;
+	 -fx-font-weight: BOLD;
 	-jfx-button-type: RAISED;
 	-fx-background-color: rgb(102.0,153.0,102.0);
 	-fx-pref-width: 200.0;
@@ -478,7 +491,7 @@
 
 .custom-jfx-list-view .jfx-list-cell:odd:selected > .jfx-rippler > StackPane,
 .custom-jfx-list-view .jfx-list-cell:even:selected > .jfx-rippler > StackPane{ 
-	-fx-background-color: rgba(37,155,36,0.2) ;
+	-fx-background-color: rgba(255,255,255,0.2) ;
 }
 
 .custom-jfx-list-view{
@@ -488,12 +501,44 @@
   	-jfx-expanded : false;
   	/* -fx-max-width : 200.0px; */   	
   	/* important to hide the list change of height */
-  	-fx-background-color:TRANSPARENT;
+  	/* -fx-background-color:TRANSPARENT; */
+  	-fx-background-color: #7E637C;
+}
+.custom-jfx-list-view .jfx-list-cell {
+	-fx-background-insets: 1.0 ; 
+	-fx-text-fill: #FFFFFF; 
+	/* -fx-font-size: 0.75em;  */
+	-fx-font-weight: bold;
+	-fx-background-color: #7E637C;
+}
+.custom-jfx-list-view .jfx-list-cell .label {
+	-fx-text-fill: #FFFFFF;
 }
 .custom-jfx-list-view .jfx-rippler {
-	-jfx-rippler-fill : #259B24;
+	/*259B24*/ -jfx-rippler-fill : #FFFFFF;
 }
 
+
+.custom-jfx-list-view .sublist-item {
+	-fx-border-color: #7E637C;
+	-fx-border-width: 1 0 1 0;
+}
+
+.custom-jfx-list-view .sublist-item .jfx-rippler {
+	-jfx-rippler-fill : #FFFFFF;
+}
+.custom-jfx-list-view .jfx-list-cell .sublist-header > .drop-icon{
+	-fx-background-color: WHITE;
+}
+.custom-jfx-list-view .jfx-list-cell:filled:hover .sublist-header > .drop-icon{
+	-fx-background-color: BLACK;
+}
+
+.custom-jfx-list-view .jfx-list-cell:filled,
+.custom-jfx-list-view .jfx-list-cell:filled:hover,
+.custom-jfx-list-view .jfx-list-cell:selected .label{
+	-fx-text-fill: #FFFFFF;
+}
 
 .custom-jfx-list-view1{
 	-jfx-vertical-gap : 10.0;
@@ -521,7 +566,7 @@
 } 	
 
 .custom-jfx-list-view2{
-	-jfx-vertical-gap : 30.0;
+	-jfx-vertical-gap : 10.0;
   	-fx-pref-width: 300px;
   	-fx-background-color: transparent ;
   	-jfx-cell-horizontal-margin: 0.0;
@@ -563,19 +608,6 @@
 	/* -fx-pref-width:40px; */
 }
 
-
-.custom-jfx-list-view .sublist-item {
-	-fx-border-color: #e0e0e0;
-	-fx-border-width: 1 0 1 0;
-}
-
-.custom-jfx-list-view .jfx-list-cell .sublist-header > .drop-icon{
-	-fx-background-color: GRAY;
-}
-.custom-jfx-list-view .jfx-list-cell:filled:hover .sublist-header > .drop-icon{
-	-fx-background-color: BLACK;
-}
-
 /*******************************************************************************/
 /*******************************************************************************/
 /*******************************************************************************/
@@ -603,7 +635,7 @@
 
 .sublist .jfx-list-cell:odd:selected > .jfx-rippler > StackPane,
 .sublist .jfx-list-cell:even:selected > .jfx-rippler > StackPane{ 
-	-fx-background-color: rgba(37,155,36,0.2) ;
+	-fx-background-color: rgba(255,255,255,0.2) ;
 }
 
 .sublist .jfx-list-cell {
