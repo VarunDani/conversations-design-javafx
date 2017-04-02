@@ -2,6 +2,8 @@ Conversations Design (JavaFX)
 -----------------------------
 
 **Description:** 
+----------------
+
 
 This design is made for Conversation.im Project (Teaser task). 
 
@@ -14,6 +16,8 @@ This design is made for Conversation.im Project (Teaser task).
 
 
 **How to Run :**
+----------------
+
 
 For Windows User :
 
@@ -27,6 +31,8 @@ For Windows User :
 
 
 **Screen layout :**
+----------------
+
 
 
 **1. Main Chat Window Screen**
@@ -70,9 +76,9 @@ Materialize Text Support provided to Text Field for Entering Chat.
 For prototype Added Emoji Support at time of message and it will be extended by clicking left emoji button 
 Three formats supported for current implementation
 
-~smile~ : for Smiling 
-~laugh~ : for Laughing
-~heart~ : for heart
+\~smile\~ : for Smiling 
+\~laugh\~ : for Laughing
+\~heart\~ : for heart
 
 ![](/SupportedFiles/emojiSupport.gif?raw=true)
 
