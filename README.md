@@ -10,6 +10,9 @@ This design is made for Conversation.im Project (Teaser task).
 **/ExecutableJAR:**  This folder contains executable JAR file and supported resource file. (Execution instructions are mentioned in below steps)
 
 
+
+
+
 **How to Run :**
 
 For Windows User :
@@ -18,6 +21,9 @@ For Windows User :
  2. Browse to Folder /ExecutableJAR and run command (jdk : 1.8.121 ): 
 
 > java -cp conversations-design-javafx.jar;lib/*;. im.conversations.app.launch.MainDemo
+
+
+
 
 
 **Screen layout :**
@@ -42,6 +48,7 @@ Status circle (online, Away, Busy) is independent component from screen and can 
 
 Channels or Individual person selection can also be perform with click of right menu
 Avatar Image and shadow of image are dynamic components and can be configured run time. Also Icons in channel and user selection window can be bind dynamically.
+
 ![](/SupportedFiles/rightPanel.gif?raw=true)
 
 
